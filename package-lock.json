@@ -1,0 +1,21 @@
+{
+  "name": "sdipp",
+  "private": true,
+  "packageManager": "npm@10.9.0",
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "dev:website": "turbo dev --filter=website",
+    "dev:portal": "turbo dev --filter=portal",
+    "build:website": "turbo build --filter=website",
+    "build:portal": "turbo build --filter=portal"
+  },
+  "devDependencies": {
+    "turbo": "^2"
+  },
+  "dependencies": {
+    "firebase": "^12.9.0"
+  }
+}
